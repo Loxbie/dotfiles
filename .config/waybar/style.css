@@ -12,12 +12,12 @@ window#waybar {
   color: #ffffff;
   text-shadow:
     0 0 4px #fff,
-    0 0 8px #fff,
-    0 0 9px rgb(0, 255, 242),
-    0 0 10px rgb(0, 255, 242),
-    0 0 11px rgb(0, 255, 242),
-    0 0 12px rgb(0, 255, 242),
-    0 0 13px rgb(0, 255, 242);
+    0 0 2px #fff,
+    0 0 2px rgb(0, 255, 242),
+    0 0 3px rgb(0, 255, 242),
+    0 0 3px rgb(0, 255, 242),
+    0 0 4px rgb(0, 255, 242),
+    0 0 5px rgb(0, 255, 242);
   transition-property: background-color;
   transition-duration: .5s;
 
@@ -140,13 +140,13 @@ button:hover {
 #pulseaudio.muted {
   color: #ffd5d4;
   text-shadow:
-    0 0 4px #ff9493,
-    0 0 8px #ff5c59,
-    0 0 9px rgb(255, 79, 79),
-    0 0 10px rgb(255, 79, 79),
-    0 0 11px rgb(255, 79, 79),
-    0 0 12px rgb(255, 79, 79),
-    0 0 13px rgb(255, 79, 79);
+    0 0 2px #ff9493,
+    0 0 2px #ff5c59,
+    0 0 3px rgb(255, 79, 79),
+    0 0 4px rgb(255, 79, 79),
+    0 0 5px rgb(255, 79, 79),
+    0 0 6px rgb(255, 79, 79),
+    0 0 7px rgb(255, 79, 79);
 }
 
 #clock {
@@ -157,24 +157,24 @@ button:hover {
 #battery icon {
   color: rgb(171, 0, 0);
   text-shadow:
-    0 0 4px #ff9493,
-    0 0 8px #ff5c59,
-    0 0 9px rgb(255, 79, 79),
-    0 0 10px rgb(255, 79, 79),
-    0 0 11px rgb(255, 79, 79),
-    0 0 12px rgb(255, 79, 79),
-    0 0 13px rgb(255, 79, 79);
+    0 0 2px #ff9493,
+    0 0 2px #ff5c59,
+    0 0 3px rgb(255, 79, 79),
+    0 0 4px rgb(255, 79, 79),
+    0 0 5px rgb(255, 79, 79),
+    0 0 6px rgb(255, 79, 79),
+    0 0 7px rgb(255, 79, 79);
 }
 
 #battery.charging,
 #battery.plugged {
   color: #d0ffd2;
   /* background-color: #00a645; */
-  text-shadow: 0 0 4px #42ff91,
+  text-shadow: 0 0 2px #42ff91,
+    0 0 2px #0FFF50,
+    0 0 3px #0FFF50,
     0 0 4px #0FFF50,
-    0 0 8px #0FFF50,
-    0 0 10px #0FFF50,
-    0 0 12px #0FFF50;
+    0 0 5px #0FFF50;
 }
 
 
