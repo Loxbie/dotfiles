@@ -202,6 +202,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #
+# Volume Control Buttons:
+#
+# mute/unmute the volume:
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+# raise volume:
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+#
 # Status Bar:
 #
 # I use waybar now
