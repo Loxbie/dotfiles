@@ -34,8 +34,8 @@
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
         "format-icons": [
-            "",
-            ""
+            "",
+            ""
         ]
     },
     "network": {
@@ -53,7 +53,7 @@
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
+        "format-muted": "",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
