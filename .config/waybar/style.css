@@ -137,6 +137,18 @@ button:hover {
   margin-right: 0;
 }
 
+#pulseaudio.muted {
+  color: #ffd5d4;
+  text-shadow:
+    0 0 4px #ff9493,
+    0 0 8px #ff5c59,
+    0 0 9px rgb(255, 79, 79),
+    0 0 10px rgb(255, 79, 79),
+    0 0 11px rgb(255, 79, 79),
+    0 0 12px rgb(255, 79, 79),
+    0 0 13px rgb(255, 79, 79);
+}
+
 #clock {
   font-size: 14px;
   font-weight: bold;
@@ -144,13 +156,27 @@ button:hover {
 
 #battery icon {
   color: rgb(171, 0, 0);
+  text-shadow:
+    0 0 4px #ff9493,
+    0 0 8px #ff5c59,
+    0 0 9px rgb(255, 79, 79),
+    0 0 10px rgb(255, 79, 79),
+    0 0 11px rgb(255, 79, 79),
+    0 0 12px rgb(255, 79, 79),
+    0 0 13px rgb(255, 79, 79);
 }
 
 #battery.charging,
 #battery.plugged {
-  color: #ffffff;
-  background-color: #00a645;
+  color: #d0ffd2;
+  /* background-color: #00a645; */
+  text-shadow: 0 0 4px #42ff91,
+    0 0 4px #0FFF50,
+    0 0 8px #0FFF50,
+    0 0 10px #0FFF50,
+    0 0 12px #0FFF50;
 }
+
 
 @keyframes blink {
   to {
