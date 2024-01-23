@@ -137,6 +137,11 @@ button:hover {
   margin-right: 0;
 }
 
+#pulseaudio {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #pulseaudio.muted {
   color: #ffd5d4;
   text-shadow:
