@@ -5,6 +5,7 @@
 - sway
 - waybar
 - kitty
+- brightnessctl
 
 ## Other stuff to install:
 
