@@ -3,7 +3,7 @@
 dir=~/dotfiles			# dotfiles directory
 backupdir=~/dotfiles.backup	# dorfiles backup directory
 # list of files/folders to symlink in homedir
-files=".bashrc .config/kitty .config/sway .config/waybar"
+files=".bashrc .config/kitty .config/sway .config/waybar .config/swaynag"
 
 
 echo "Creating $bakupdir to backup any existing dotfiles in ~"

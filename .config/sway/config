@@ -87,7 +87,9 @@ output * bg ~/dotfiles/assets/background_lox_city.png fill #1f1f1f
     bindsym $mod+Shift+r restart
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m "Do you want to exit?" --dismiss-button "" -B "" "poweroff" -B "" "swaymsg exit"
+    
 #
 # Moving around:
 #

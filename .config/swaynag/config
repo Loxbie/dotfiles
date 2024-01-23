@@ -1,0 +1,12 @@
+font=Hack Bold
+edge=bottom
+border-bottom-size=0
+[warning]
+background=ff5c5950
+border=ff5c59
+text=FFFFFF
+button-background=ff5c59
+message-padding=10
+button-gap=2
+button-dismiss-gap=0
+button-padding=5
