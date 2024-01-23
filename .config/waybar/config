@@ -18,30 +18,32 @@
         "max-length": 50
     },
     "battery": {
-        "format": "{capacity}% {icon}",
+        "format": "{icon}",
         "format-icons": [
             "",
             "",
             "",
             "",
             ""
-        ]
+        ],
+        "format-alt": "{capacity}% {icon}"
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{percent}% {icon}",
+        "format": "{icon}",
         "format-icons": [
             "",
             ""
-        ]
+        ],
+        "format-alt": "{percent}% {icon}"
     },
     "network": {
         "format": "{ifname}",
-        "format-wifi": "{essid} ({signalStrength}%)",
-        "format-ethernet": "{ifname} ",
+        "format-wifi": "",
+        "format-ethernet": "",
         "format-disconnected": "",
         "tooltip-format": "{ifname}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
