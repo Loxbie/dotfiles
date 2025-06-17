@@ -9,6 +9,7 @@
     ],
     "modules-right": [
         "backlight",
+        "custom/mako",
         "network",
         "pulseaudio",
         "battery",

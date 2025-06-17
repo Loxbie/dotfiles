@@ -1,10 +1,10 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Hack Bold";
+  /* font-family: "Hack Bold"; */
   font-size: 14px;
   min-height: 0;
 }
-
+/*
 window#waybar {
   background: transparent;
   color: #ffffff;
@@ -23,7 +23,7 @@ window#waybar {
 window#waybar.hidden {
   opacity: 0.2;
 }
-
+*/
 #waybar.empty #window {
   background-color: transparent;
   border: none;
@@ -42,17 +42,19 @@ window#waybar.hidden {
   padding-right: 8px;
   font-size: 14px;
   font-weight: bold;
-  border: 2px solid #ffffff;
+  /*border: 2px solid #ffffff;*/
   border-radius: 2px;
   margin-top: 5px;
   margin-left: 10px;
   margin-right: 10px;
   /* margin-bottom: 10px; */
-  box-shadow: 0 0 4px #fff,
+  
+  /* box-shadow: 0 0 4px #fff,
     0 0 4px #fff,
     0 0 4px #48f8fc,
     0 0 8px #48f8fc,
     inset 0 0 8px #48f8fc;
+    */
 }
 
 button {
@@ -66,20 +68,21 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
   background: inherit;
-  color: #ffffff;
+  color: #a12345;
   font-size: 14px;
   font-weight: bold;
-  text-shadow:
+  /*text-shadow:
     0 0 4px #fff,
     0 0 5px #fff,
     0 0 2px rgb(209, 58, 255),
     0 0 3px rgb(209, 58, 255),
     0 0 4px rgb(209, 58, 255),
-    0 0 5px rgb(209, 58, 255);
+    0 0 5px rgb(209, 58, 255);*/
 }
 
 #workspaces button {
   padding: 0 4px;
+  /*
   text-shadow:
     0 0 4px #fff,
     0 0 2px #fff,
@@ -88,7 +91,8 @@ button {
     0 0 3px rgb(0, 255, 242),
     0 0 4px rgb(0, 255, 242),
     0 0 5px rgb(0, 255, 242);
-}
+    */
+    }
 
 /* #workspaces button:hover {} */
 
@@ -96,30 +100,19 @@ button {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  text-shadow: 0 0 4px #fff,
-    0 0 2px #fff,
-    0 0 2px rgb(255, 252, 47),
-    0 0 3px rgb(255, 225, 58),
-    0 0 4px rgb(255, 225, 58),
-    0 0 5px rgb(255, 225, 58);
 }
 
 #workspaces button.focused {
-  color: #fff;
+  color: #4682b4;
   font-size: 14px;
   font-weight: bold;
-  text-shadow: 0 0 4px #fff,
-    0 0 2px #fff,
-    0 0 2px rgb(209, 58, 255),
-    0 0 3px rgb(209, 58, 255),
-    0 0 4px rgb(209, 58, 255),
-    0 0 5px rgb(209, 58, 255);
 }
 
 #workspaces button.urgent {
   color: #ffd5d4;
   font-size: 14px;
   font-weight: bold;
+  /*
   text-shadow:
     0 0 2px #ff9493,
     0 0 2px #ff5c59,
@@ -128,6 +121,7 @@ button {
     0 0 5px rgb(255, 79, 79),
     0 0 6px rgb(255, 79, 79),
     0 0 7px rgb(255, 79, 79);
+    */
 }
 
 #mode {
@@ -141,7 +135,7 @@ button {
 #network,
 #pulseaudio,
 #wireplumber {
-  margin: 2px;
+  margin: 5px;
   padding-left: 4px;
   padding-right: 4px;
   color: #ffffff;
@@ -164,15 +158,7 @@ button {
 }
 
 #pulseaudio.muted {
-  color: #ffd5d4;
-  text-shadow:
-    0 0 2px #ff9493,
-    0 0 2px #ff5c59,
-    0 0 3px rgb(255, 79, 79),
-    0 0 4px rgb(255, 79, 79),
-    0 0 5px rgb(255, 79, 79),
-    0 0 6px rgb(255, 79, 79),
-    0 0 7px rgb(255, 79, 79);
+  color: #ff5c59;
 }
 
 #clock {
@@ -182,24 +168,11 @@ button {
 
 #battery icon {
   color: rgb(171, 0, 0);
-  text-shadow:
-    0 0 2px #ff9493,
-    0 0 2px #ff5c59,
-    0 0 3px rgb(255, 79, 79),
-    0 0 4px rgb(255, 79, 79),
-    0 0 5px rgb(255, 79, 79),
-    0 0 6px rgb(255, 79, 79),
-    0 0 7px rgb(255, 79, 79);
 }
 
 #battery.charging,
 #battery.plugged {
-  color: #d0ffd2;
-  text-shadow: 0 0 2px #42ff91,
-    0 0 2px #0FFF50,
-    0 0 3px #0FFF50,
-    0 0 4px #0FFF50,
-    0 0 5px #0FFF50;
+  color: #0fff50;
 }
 
 
@@ -236,6 +209,7 @@ label:focus {
 
 #network.disconnected {
   color: #ffd5d4;
+  /*
   text-shadow:
     0 0 2px #ff9493,
     0 0 2px #ff5c59,
@@ -244,6 +218,7 @@ label:focus {
     0 0 5px rgb(255, 79, 79),
     0 0 6px rgb(255, 79, 79),
     0 0 7px rgb(255, 79, 79);
+    */
 }
 
 #temperature.critical {
