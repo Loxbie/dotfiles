@@ -16,6 +16,6 @@ cd $dir
 # then create symlinks
 
 for file in $files; do
-	mv ~/$file ${backupdir}/ && echo "Moved $file to ${backupdir}/${file}"
+	mv ~/${file} ${backupdir}/ && echo "Moved $file to ${backupdir}/${file}"
 	ln -s ${dir}/${file} ~/${file} && echo "Created symlink to ~/${file}"
 done
