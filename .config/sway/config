@@ -9,17 +9,17 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
-set $left j
-set $down k
-set $up l
-set $right odiaeresis
+set $left h
+set $down j
+set $up k
+set $right l
 # Your preferred terminal emulator
 set $term konsole
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu -b | xargs swaymsg exec --
-
+# bindsym $mod+d exec dmenu_run
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
@@ -33,6 +33,9 @@ output * bg ~/dotfiles/assets/lox-netrunner_v2.png center #1f1f1f
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
+output eDP-1 pos 0 0 res 2880x1800
+output HDMI-A-1 pos 2880 0 res 1920x1080
+focus output eDP-1
 
 ### Idle configuration
 #
@@ -94,7 +97,7 @@ output * bg ~/dotfiles/assets/lox-netrunner_v2.png center #1f1f1f
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
+    bindsym $mod+$left focus left; exec "swaymsg seat - cursor warp container"
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
@@ -109,8 +112,7 @@ output * bg ~/dotfiles/assets/lox-netrunner_v2.png center #1f1f1f
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
+    # Ditto, with arrow key    bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
@@ -225,6 +227,8 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 #
 # I use waybar now
 # see .config/waybar/ for more
+
+
 default_border pixel 2
 gaps inner 5
 
@@ -235,3 +239,4 @@ input type:keyboard {
 
 include /etc/sway/config.d/*
 exec waybar
+exec mako
